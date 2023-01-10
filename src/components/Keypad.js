@@ -2,8 +2,18 @@
 
 function Keypad (){
     return (
-        <div></div>
+        <div>Password: 
+            <input
+                type = "password"
+                onChange={handleChange} 
+            />
+        </div>
     )
+}
+
+const handleChange = (e) => {
+    e.preventDefault();
+    console.log("Entering password...")
 }
 
 export default Keypad;
